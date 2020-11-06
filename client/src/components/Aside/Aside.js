@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {HomeIcon, LikeIcon, PriceIcon, FolderIcon, PlusIcon, } from '../../icons';
+import {HomeIcon, LikeIcon, PriceIcon, FolderIcon } from '../../icons';
 import './Aside.css'
 
 class Aside extends Component {
@@ -16,8 +16,18 @@ class Aside extends Component {
             page.classList.remove('visible')
           }
         })
-      break
-    }
+      break;
+      case 'home':
+        document.querySelectorAll('.page').forEach((page) => {
+          if (page.classList.contains('home-section')) {
+            page.classList.add('visible')
+          } else {
+            page.classList.remove('visible')
+          }
+        })
+      break;
+      default :
+    };
       
     
   }
@@ -33,9 +43,9 @@ class Aside extends Component {
     return (
       <aside className="aside-container">
           <ul className="aside-inner">
-            <li className="aside-links">
+            <li id="home" className="aside-links" onClick={this.handleClick}>
               <HomeIcon />
-              <h3 className="aside-menu">Home</h3>
+              <h3 className="aside-menu" >Home</h3>
             </li>
             <li className="aside-links">
               <LikeIcon />

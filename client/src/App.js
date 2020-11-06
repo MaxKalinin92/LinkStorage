@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 // import {Switch, Route} from 'react-router-dom';
 import Header from './components/Header/Header';
-// import Main from './pages/Main/Main';
+import Home from './components/pages/home/Home';
 import Folder from './components/pages/folders/folders';
 import Aside from './components/Aside/Aside'
 
@@ -63,9 +63,9 @@ class App extends Component {
             <Aside />
             <Folder />
             {/* <button onClick={this.onClickHandler}>Click</button> */}
-            {/* <Main 
+            <Home 
                 linkData={this.state.linkData}
-            /> */}
+            />
             {/* <Switch>
                 <Route exact path='/header' component={Header} />
                 <Route exact path='/main' component={Main} />
