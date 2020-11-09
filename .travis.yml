@@ -10,8 +10,8 @@ cache:
     - $HOME/client/node_modules
 
 install:
-  - npm ci
-  - cd client && npm ci
+  - npm install
+  - cd client && npm install
 
 script:
   - npm test
