@@ -1,7 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const authRoutes = require('./routes/auth')
-const config = require('config')
+// const config = require('config')
 
 const app = express()
 
