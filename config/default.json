@@ -1,0 +1,7 @@
+{
+   "port": 5000 ,
+   "mongoUri":"mongodb+srv://Max:2916021@cluster0.k8lor.mongodb.net/LinkStorage?retryWrites=true&w=majority"
+}
+
+
+
