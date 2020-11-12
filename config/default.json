@@ -1,0 +1,8 @@
+{
+  "serverPort": "5000",
+  "mongoURI": "mongoURI: 'mongodb://localhost:27017/LinkStorage'",
+  "mongoOptions": {
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true
+  }
+}
