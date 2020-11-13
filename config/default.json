@@ -1,6 +1,8 @@
 {
   "serverPort": "5000",
-  "mongoURI": "mongoURI: 'mongodb://localhost:27017/LinkStorage'",
+  "mongoUsername": "linkStorage",
+  "mongoPassword": "PencyKi2LhL42iMB",
+  "mongoURI": "mongodb+srv://linkStorage:PencyKi2LhL42iMB@linkstorage.7u6f2.mongodb.net/LinkStorage?retryWrites=true&w=majority",
   "mongoOptions": {
     "useNewUrlParser": true,
     "useUnifiedTopology": true

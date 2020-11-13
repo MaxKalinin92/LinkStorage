@@ -18,7 +18,7 @@ const folderSchema = new Schema({
 })
 
 const userSchema = new Schema({
-  name: { type: String, required: true },
+  name: { type: String },
   email: { type: String, required: true },
   password: { type: String, required: true },
   folders: [folderSchema],

@@ -2,10 +2,18 @@ const express = require('express')
 const mongoose = require('mongoose')
 const config = require('config')
 const app = express()
+const bodyParser = require('body-parser')
+
+const authRouter = require('./routes/auth')
 
 const PORT = config.get('serverPort')
 const MONGO_URI = config.get('mongoURI')
 const MONGO_OPTIONS = config.get('mongoOptions')
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+
+app.use('/api/auth', authRouter)
 
 const start = async() => {
   try {
@@ -15,8 +23,12 @@ const start = async() => {
       console.log(`Server started on http://localhost:${PORT}`)
     })
   } catch (error) {
-    console.log('The server or database failed')
+    console.log(`The server or database failed\n${error}`)
   }
 }
 
-start()
+if (!module.parent) {
+  start()
+}
+
+module.exports = app
