@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 // import { Link, BrowserRouter as Router, Route } from 'react-router-dom'
-import './appStart.css'
-import CreateAccount from './components/CreateAccount/CreateAccount'
-import SignIn from './components/SignIn/SignIn'
+import './StartPage.css'
+import CreateAccount from './../../CreateAccount/CreateAccount'
+import SignIn from './../../SignIn/SignIn'
 
-class AppStart extends Component {
+class StartPage extends Component {
   state = {
     showModal: false
   }
@@ -51,4 +51,4 @@ class AppStart extends Component {
   }
 }
 
-export default AppStart
+export default StartPage

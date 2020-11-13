@@ -1,0 +1,29 @@
+.login-block{
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.login-container{
+  display: block;
+  width: 560px;
+  margin: 100px auto;
+  height: auto;
+  background-color: white;
+}
+
+.login-error{
+  margin: 30px 30px;
+  border: 1px solid #d59595;
+  border-radius: 4px;
+  background: #f2dede;
+  color: #963b3b;
+  padding: .625rem 1.875rem .625rem 1.25rem;
+}
+
+@media (max-width: 600px){
+  .login-container{
+    width: 100%;
+  }
+}
+

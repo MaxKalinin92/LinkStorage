@@ -1,10 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-// import App from './App'
-import AppStart from './AppStart'
+import App from './App'
 import * as serviceWorker from './serviceWorker'
-// import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import thunk from 'redux-thunk'
 import { applyMiddleware, createStore } from 'redux'
 import { rootReducer } from './redux/rootReducer'
@@ -17,17 +16,12 @@ const store = createStore(rootReducer, composeWithDevTools(
   )
 ))
 const appStart = (
-  <Provider store={store}>
-    <AppStart />
-  </Provider>
-)
-/* const app = (
-  <React.StrictMode>
-    <Router>
+  <BrowserRouter>
+    <Provider store={store}>
       <App />
-    </Router>
-  </React.StrictMode>
-) */
+    </Provider>
+  </BrowserRouter>
+)
 
 ReactDOM.render(
   appStart,

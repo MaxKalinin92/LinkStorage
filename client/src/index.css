@@ -26,6 +26,10 @@ code {
     monospace;
 }
 
+button{
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
   * {
     font-size: 14px;

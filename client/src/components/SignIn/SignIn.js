@@ -43,8 +43,6 @@ class SignIn extends React.Component {
 
     render() {
       return (
-        <React.Fragment>
-          {(this.props.show === 'signIn') && (
             <div className="signIn-popup">
               <div className="signIn-container">
 
@@ -90,8 +88,6 @@ class SignIn extends React.Component {
 
               </div>
             </div>
-          )}
-        </React.Fragment>
       )
     }
 }
