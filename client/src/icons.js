@@ -9,6 +9,9 @@ const PlusIcon = () => <SVG src={require('./icons/plus-icon.svg')} />
 const SearchIcon = () => <SVG src={require('./icons/search-icon.svg')} />
 const PriceIcon = () => <SVG src={require('./icons/price-icon.svg')} />
 const FolderIcon = () => <SVG src={require('./icons/folder-icon.svg')} />
+const ArchiveIcon = () => <SVG src={require('./icons/archive-icon.svg')} />
+const VideoIcon = () => <SVG src={require('./icons/video-icon.svg')} />
+const MenuIcon = () => <SVG src={require('./icons/menu-icon.svg')} />
 
 export {
   ArrowIcon,
@@ -18,5 +21,8 @@ export {
   PlusIcon,
   SearchIcon,
   PriceIcon,
-  FolderIcon
+  FolderIcon,
+  ArchiveIcon,
+  VideoIcon,
+  MenuIcon
 }

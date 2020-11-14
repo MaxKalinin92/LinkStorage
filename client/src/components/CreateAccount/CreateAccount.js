@@ -45,13 +45,13 @@ class CreateAccount extends React.Component {
     return (
         <React.Fragment>
           {(this.props.show === 'createAccount') && (
-            <div className="signIn-popup">
+            <div className="signIn-popup close" onClick={(e) => { this.props.onHideCreateAccount(e) }}>
               <div className="signIn-container">
 
                 <div className="signIn-header">
                   <h4>Create an Account</h4>
-                  <div className="close-icon"
-                  onClick={() => { this.props.onHideCreateAccount() }}
+                  <div className="close-icon close"
+                  onClick={(e) => { this.props.onHideCreateAccount(e) }}
                   >x</div>
                 </div>
 

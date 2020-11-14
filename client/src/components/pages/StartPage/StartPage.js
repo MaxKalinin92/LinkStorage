@@ -13,8 +13,10 @@ class StartPage extends Component {
     this.setState({ showModal: value })
   };
 
-  hideModal = () => {
-    this.setState({ showModal: false })
+  hideModal = (e) => {
+    if (e.target.classList.contains('close')) {
+      this.setState({ showModal: false })
+    }
   };
 
   render() {

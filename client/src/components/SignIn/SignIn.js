@@ -43,13 +43,16 @@ class SignIn extends React.Component {
 
     render() {
       return (
-            <div className="signIn-popup">
+        <React.Fragment>
+          {(this.props.show === 'signIn') && (
+            <div className="signIn-popup close"
+            onClick={(e) => { this.props.onHideSignIn(e) }}>
               <div className="signIn-container">
 
                 <div className="signIn-header">
                   <h4>Sign In</h4>
-                  <div className="close-icon"
-                  onClick={() => { this.props.onHideSignIn() }}
+                  <div className="close-icon close"
+                  onClick={(e) => { this.props.onHideSignIn(e) }}
                   >x</div>
                 </div>
 
@@ -88,6 +91,8 @@ class SignIn extends React.Component {
 
               </div>
             </div>
+          )}
+        </React.Fragment>
       )
     }
 }

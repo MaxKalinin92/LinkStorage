@@ -8,12 +8,12 @@
   z-index: 10;
 }
 
-.signIn-container{
+.addLink-container{
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 560px;
+  width: 730px;
   height: auto;
   background-color: white;
 }
@@ -47,38 +47,22 @@
   box-sizing: border-box;
 }
 
-.signIn-label{
-  padding: 12px 0;
-  margin-bottom: 5px;
-  color: #666;
-  font-weight: 500;
-  font-size: 1.125rem;
-  width: 17%;
-}
-
-.signIn-input{
-  width: 64%;
+.addLink-input{
+  width: 100%;
   background-color: rgb(232, 240, 254);
   font-size: 16px;
   border-radius: 4px;
   border: 1px solid #ccc;
   padding: 12px;
-  margin: 0;
+  margin: 0 10px 0 0;
   box-sizing: border-box;
-}
-
-.submit-block{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 100%;
 }
 
 .submitBtn{
   color: #fff;
   background: #222;
   font-size: 1rem;
-  padding: .9375rem 1.875rem 1rem;
+  padding: 0.8rem 1.5rem;
   white-space: nowrap;
   min-width: 120px;
   border-radius: 4px;
@@ -86,8 +70,8 @@
   max-width: 100%;
 }
 
-@media (max-width: 600px){
-  .signIn-container{
+@media (max-width: 730px){
+  .addLink-container{
     position: relative;
     top: 0;
     left: 0;
@@ -104,15 +88,11 @@
     justify-content: space-between;
     align-items: flex-start;
   }
-  
-  .signIn-input{
-    width: 100%;
-  }
 
-  .submit-block{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  .submitBtn{
+    border-radius: 4px;
+    margin-top:10px;
+    text-align: center;
     width: 100%;
   }
 }

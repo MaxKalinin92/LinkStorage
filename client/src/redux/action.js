@@ -1,4 +1,4 @@
-import { LOGIN_USER, SEND_USER } from './types'
+import { LOGIN_USER, SEND_USER, ADD_LINK } from './types'
 
 export function sendUser() {
   return async dispatch => {
@@ -11,6 +11,13 @@ export function sendUser() {
 export function loginUser(post) {
   return {
     type: LOGIN_USER,
+    payLoad: post
+  }
+}
+
+export function addLink(post) {
+  return {
+    type: ADD_LINK,
     payLoad: post
   }
 }
