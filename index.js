@@ -4,7 +4,7 @@ const config = require('config')
 const app = express()
 const bodyParser = require('body-parser')
 
-const authRouter = require('./routes/auth')
+const authRouter = require('./routes/authRoutes')
 
 const PORT = config.get('serverPort')
 const MONGO_URI = config.get('mongoURI')

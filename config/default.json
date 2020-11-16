@@ -6,5 +6,9 @@
   "mongoOptions": {
     "useNewUrlParser": true,
     "useUnifiedTopology": true
-  }
+  },
+  "jwtSecret": "Ujfmw;Ofgbl",
+  "mailGunApiKey": "9752e779d886f3e76790e47212ad956a-ba042922-bed5553d",
+  "domain": "sandbox88c1ec80771f430988c0e2b6798078b9.mailgun.org",
+  "clientUrl": "http://localhost:5000"
 }
