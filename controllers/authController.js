@@ -65,7 +65,7 @@ exports.validateEmail = async (req, res) => {
   }
 }
 
-exports.login = async (req, res, next) => {
+exports.login = async (req, res) => {
   try {
     console.log(req.body)
     const { email, password, isConfirmation } = req.body
@@ -76,6 +76,11 @@ exports.login = async (req, res, next) => {
         .json({ message: constants.LOGIN_ERROR_INCORRECT_DATA })
     }
 
+    if (!user.isEmailConfrmed) {
+      return res
+        .status(400)
+        .json({ message: constants.LOGIN_ERROR_UNCONFIRMED_EMAIL })
+    }
     const matchPasswords = await bcrypt.compare(password, user.password)
     if (!matchPasswords) {
       return res

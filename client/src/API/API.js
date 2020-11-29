@@ -8,6 +8,7 @@ class _API {
   }
 
   sendSignInData = async (data) => {
+    console.log(this)
     const response = await post(BASE_URL + 'login', data)
     return response
   }
